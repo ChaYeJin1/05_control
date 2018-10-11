@@ -9,18 +9,14 @@ int main(int argc, char *argv[]) {
 	printf("Input an integer : ");
 	scanf("%d", &i);
 	
-	if (i > 0)
+	if (i < 0)
 	{
-		printf("양 수 입 니 다 .");
+		printf("절대값은 %i 입니다 .", -i);
 	
-	}
-	else if (i == 0)
-	{
-		printf("0 입니다.");
 	}
 	else
 	{
-		printf("음 수 입 니 다 .");
+		printf("절대값은 %i 입니다 .", i);
 	}
 	return 0;
 }
