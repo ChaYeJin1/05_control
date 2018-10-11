@@ -7,7 +7,7 @@ int main(int argc, char *argv[]) {
 	char c;
 	
 	printf("Input a char :");
-	scaf("%c", &c);
+	scanf("%c", &c);
 	
 	if('A' <= c && c <='Z')
 	{
