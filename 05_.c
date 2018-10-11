@@ -4,19 +4,26 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
-	int i;
+	char c;
 	
-	printf("Input an integer : ");
-	scanf("%d", &i);
+	printf("Input a char :");
+	scaf("%c", &c);
 	
-	if (i < 0)
+	if('A' <= c && c <='Z')
 	{
-		printf("절대값은 %i 입니다 .", -i);
-	
+		printf("대 문 자 입 니 다 .");
+	}
+	else if ('a' <= c && c <='z') 
+	{
+		printf("소 문 자 입 니 다 .");
+	}
+	else if ('0' <= c && c <='9')
+	{
+		printf("숫 자 입 니 다 .");
 	}
 	else
 	{
-		printf("절대값은 %i 입니다 .", i);
+		printf("기타 글 자 입 니 다 .");
 	}
 	return 0;
 }
